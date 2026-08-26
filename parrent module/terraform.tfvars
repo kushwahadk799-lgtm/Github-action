@@ -7,6 +7,10 @@ rgs = {
     name     = "dhiru_rg"
     location = "west europe"
   }
+  rg3 = {
+    name     = "apna chandan bhai_rg"
+    location = "east us"
+  }
  }
 
 vnet = {
