@@ -12,6 +12,10 @@ rgs = {
     location = "east us"
   }
 }
+    name     = "apna chandan bhai_rg"
+    location = "east us"
+  }
+ }
 
 vnet = {
   vnet1 = {
