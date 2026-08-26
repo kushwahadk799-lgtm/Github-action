@@ -13,12 +13,3 @@ rgs = {
   }
 }  
  
-
-vnet = {
-  vnet1 = {
-    name          = "vnet_rahul"
-    location      = "centralindia"
-    rgs           = "bhatt_rg"
-    address_space = ["10.1.0.0/16"]
-  }
-}
