@@ -7,14 +7,8 @@ variable "rgs" {
 variable "vnet" {
   type = map(object({
     name          = string
+    rgs            = string
     location      = string
     address_space = list(string)
-  }))
-}
-variable "subnet" {
-  type = map(object({
-    name             = string
-    virtual_network  = string
-    address_prefixes = list(string)
   }))
 }

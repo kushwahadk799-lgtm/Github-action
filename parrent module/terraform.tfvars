@@ -3,15 +3,15 @@ rgs = {
     name     = "bhatt_rg"
     location = "centralindia"
   }
-   rg2 = {
+  rg2 = {
     name     = "dhiru_rg"
     location = "west europe"
   }
   rg3 = {
-    name     = "apna chandan bhai_rg"
+    name     = "apna_chandan_bhai_rg"
     location = "east us"
   }
- }
+}
 
 vnet = {
   vnet1 = {
@@ -19,20 +19,5 @@ vnet = {
     location      = "centralindia"
     rgs           = "bhatt_rg"
     address_space = ["10.1.0.0/16"]
-  }
-}
-
-subnet = {
-  subnet1 = {
-    name            = "rahul_front"
-    rgs             = "bhatt_rg"
-    vnet_name       = "vnet_rahul"
-    address_prefixe = ["10.1.1.0/24"]
-  }
-  subnet2 = {
-    name            = "rahul_back"
-    rgs             = "bhatt_rg"
-    vnet_name       = "vnet_rahul"
-    address_prefixe = ["10.1.2.0/24"]
   }
 }
