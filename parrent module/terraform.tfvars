@@ -7,4 +7,4 @@ rgs = {
     name     = "bhatt2_rg"
     location = "centralindia"
   }
- }
+}
