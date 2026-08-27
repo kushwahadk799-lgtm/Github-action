@@ -43,6 +43,12 @@ jobs:
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
         continue-on-error: true
+        
+        - name: Check repository structure
+  run: |
+    pwd
+    ls -la
+    find . -maxdepth 3 -type d
 
 
       # ----------------------------------------------------------
