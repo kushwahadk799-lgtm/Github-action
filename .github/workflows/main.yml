@@ -55,8 +55,6 @@ jobs:
         run: |
           tflint --init
           tflint
-
-
       # ----------------------------------------------------------
       # 3. TFSEC - Terraform Security Scan
       # ----------------------------------------------------------
@@ -80,17 +78,15 @@ jobs:
 
       - name: Azure Login
         run: |
- az login \
+          az login \
             --service-principal \
             --username "5dbfcbf4-b70b-4ea1-991e-989b54697244" \
             --password "r0H8Q~ZmdhkTvMEMTfXz5rbS_z1FuXIuWpImWa.8" \
             --tenant "0566e7c0-ce72-4d83-a4b0-a667ea532764"
-
       - name: Set Azure Subscription
         run: |
           az account set \
             --subscription "0e3402ea-b30c-409a-9bbe-2dac4d43e202"
-
       - name: Check Azure Login
         run: az account show
 
@@ -128,17 +124,15 @@ jobs:
 
       - name: Azure Login
         run: |
-           az login \
-            --service-principal \
+          az login \
+            --service-principal \  
             --username "5dbfcbf4-b70b-4ea1-991e-989b54697244" \
             --password "r0H8Q~ZmdhkTvMEMTfXz5rbS_z1FuXIuWpImWa.8" \
             --tenant "0566e7c0-ce72-4d83-a4b0-a667ea532764"
-
       - name: Set Azure Subscription
         run: |
           az account set \
-            --subscription "0e3402ea-b30c-409a-9bbe-2dac4d43e202"
-
+           --subscription "0e3402ea-b30c-409a-9bbe-2dac4d43e202"
       - name: Check Azure Login
         run: az account show
 
@@ -153,4 +147,3 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve tfplan
-     
