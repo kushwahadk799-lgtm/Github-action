@@ -7,4 +7,8 @@ rgs = {
     name     = "bhatt2_rg"
     location = "centralindia"
   }
+  rg3 = {
+    name     = "rahul_rg"
+    location = "centralindia"
+  }
 }
